@@ -12,9 +12,9 @@ class TaskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Task $tasks)
     {
-        //
+        dd($tasks->all());
     }
 
     /**
@@ -33,9 +33,10 @@ class TaskController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Task $task)
     {
-        //
+        $task->create($request->all());
+        return redirect('/home');
     }
 
     /**
