@@ -10644,7 +10644,27 @@ a.text-dark:focus {
   }
 }
 
-.content-welcome {
-  margin: auto;
+body {
+  background-color: #C98D19;
+}
+
+.card-signin {
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 350px;
+}
+
+.full-logo {
+  height: 50px;
+}
+
+.btn-orangevc {
+  background-color: #C98D19;
+}
+
+.btn-bluevc {
+  background-color: #0A4081;
 }
 
