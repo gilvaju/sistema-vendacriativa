@@ -6,6 +6,7 @@
     <title>SGVC</title>
 </head>
 <body>
+    Teste
     @yield('content')
 </body>
 </html>
