@@ -55,20 +55,18 @@
                                     </form>
                                 </div>
                             </div>
+                            <hr>
                             <div class="row">
-                                <ul class="d-flex flex-column-reverse todo-list">
-                                    @foreach($tasks as $task)
-                                        <li>
-                                            <div class="form-check"> 
-                                                <label class="form-check-label"> 
-                                                    <input class="checkbox" type="checkbox"> {{ $task->title }} 
-                                                    <i class="input-helper"></i>
-                                                </label> 
-                                            </div> 
-                                            <i class="remove mdi mdi-close-circle-outline"></i>
-                                        </li>   
-                                    @endforeach
-                                </ul>
+                                <div class="col-12">
+                                    <div class="list-group">
+                                        @foreach($tasks as $task)
+                                            <a href="" class="list-group-item list-group-item-action">
+                                                <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+                                                {{ $task->title }}
+                                            </a> 
+                                        @endforeach
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
