@@ -14,7 +14,7 @@ class TaskController extends Controller
      */
     public function index(Task $tasks)
     {
-        dd($tasks->all());
+        // dd($tasks->all());
     }
 
     /**
@@ -35,8 +35,8 @@ class TaskController extends Controller
      */
     public function store(Request $request, Task $task)
     {
-        $task->create($request->all());
-        return redirect('/home');
+        // $task->create($request->all());
+        // return redirect('/home');
     }
 
     /**
