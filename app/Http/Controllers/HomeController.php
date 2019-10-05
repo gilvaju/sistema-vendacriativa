@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Task;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -14,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        // $this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -24,7 +23,7 @@ class HomeController extends Controller
      */
     public function index(Task $task)
     {
-        // $tasks = $task->all();
-        // return view('dashboard', compact('tasks', 'tasks'));
+        $tasks = $task->all();
+        return view('dashboard', compact('tasks', 'tasks'));
     }
 }
