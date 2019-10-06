@@ -35,8 +35,8 @@ class TaskController extends Controller
      */
     public function store(Request $request, Task $task)
     {
-        // $task->create($request->all());
-        // return redirect('/home');
+        $task->create($request->all());
+        return redirect('/home');
     }
 
     /**
@@ -81,6 +81,7 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
-        //
+        $task->delete();
+        return redirect('/home');
     }
 }
