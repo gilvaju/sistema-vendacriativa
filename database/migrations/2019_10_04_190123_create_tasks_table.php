@@ -19,9 +19,9 @@ class CreateTasksTable extends Migration
             $table->text('description')->nullable();
             $table->text('status');
             $table->dateTime('delivery_date')->nullable();
-            $table->unsignedInteger('owner_id');
-            $table->unsignedInteger('responsible_designer');
-            $table->unsignedInteger('client_id');
+            $table->text('owner_id');
+            $table->text('responsible_designer');
+            $table->text('client_id');
             $table->timestamps();
         });
     }

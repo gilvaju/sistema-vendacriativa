@@ -12,16 +12,16 @@
                             @include('panels.tasks')
                         </div>
                         <div class="tab-pane fade" id="nav-calendar" role="tabpanel" aria-labelledby="nav-calendar-tab">
-                            @include('panels.tasks')
+                            @include('panels.nothing-yet')
                         </div>
                         <div class="tab-pane fade" id="nav-dollar" role="tabpanel" aria-labelledby="nav-dollar-tab">
-                            @include('panels.tasks')
+                            @include('panels.nothing-yet')
                         </div>
                         <div class="tab-pane fade" id="nav-tools" role="tabpanel" aria-labelledby="nav-tools-tab">
-                            @include('panels.tasks')
+                            @include('panels.nothing-yet')
                         </div>
                         <div class="tab-pane fade" id="nav-cogs" role="tabpanel" aria-labelledby="nav-cogs-tab">
-                            @include('panels.tasks')
+                            @include('panels.nothing-yet')
                         </div>
                     </div>
                 </div>
