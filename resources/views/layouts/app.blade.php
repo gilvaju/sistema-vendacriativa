@@ -18,10 +18,6 @@
     <script src="https://kit.fontawesome.com/6ecb33213d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <div class="container-fluid">
-        @yield('content')
-    </div>
-    
+    @yield('content')
 </body>
 </html>

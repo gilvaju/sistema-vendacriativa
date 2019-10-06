@@ -10644,7 +10644,7 @@ a.text-dark:focus {
   }
 }
 
-body {
+.container-signin {
   background-color: #C98D19;
 }
 
@@ -10660,11 +10660,23 @@ body {
   height: 50px;
 }
 
-.btn-orangevc {
+.bg-orangevc {
   background-color: #C98D19;
 }
 
-.btn-bluevc {
+.bg-bluevc {
   background-color: #0A4081;
+}
+
+/* Style for Tab Nav */
+
+#nav-tab-panels a.nav-item {
+  background-color: #0A4081;
+  border: none;
+  padding: 1rem;
+}
+
+#nav-tab-panels .active {
+  color: white;
 }
 

@@ -19,7 +19,7 @@
                                 <hr>
                                 <p class=" text-justify">Você gostaria de fazer o que?</p>
                                 <a href="https://vendacriativa.com" class="btn btn-info text-light btn-block">Visitar o Site</a>
-                                <a href="/login" class="btn btn-bluevc text-light btn-block">Entrar</a>
+                                <a href="/login" class="btn bg-bluevc text-light btn-block">Entrar</a>
                             </div>
                         </div>
                     </div>
