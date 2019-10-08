@@ -10688,3 +10688,22 @@ a.text-dark:focus {
   color: white;
 }
 
+/* Style for bloat button */
+
+.float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 95px;
+  right: 25px;
+  background-color: white;
+  color: #0A4081;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 1px 1px 1px #3e3e3e;
+}
+
+.my-float {
+  margin-top: 14px;
+}
+
