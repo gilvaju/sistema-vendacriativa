@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row mt-3">
                 <div class="col-12">
-                    <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-content">
                         <div class="tab-pane fade show active" id="nav-tasks" role="tabpanel" aria-labelledby="nav-tasks-tab">
                             @include('panels.tasks')
                         </div>

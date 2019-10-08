@@ -7,6 +7,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap'
 
+.bg-orangevc
+    background-color: $orangevc
+
+.bg-bluevc
+    background-color: $bluevc
+
 .container-signin
     background-color: $orangevc
 
@@ -16,14 +22,7 @@
     box-shadow: 0 0.1rem 0.25rem 0 rgba(0, 0, 0, 0.1)
     text-align: center
     max-width: 350px
-
-.full-logo
-    height: 50px
-
-.bg-orangevc
-    background-color: $orangevc
-
-.bg-bluevc
-    background-color: $bluevc
+    & .full-logo
+        height: 50px
 
 @import 'nav.sass'
