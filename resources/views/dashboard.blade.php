@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container-fluid">
-    <div class="row d-flex flex-column justify-content-center bg-orangevc text-white" style="height: 10vh">
+    <div class="row d-flex flex-column justify-content-center bg-dark text-white" style="height: 10vh">
         @include('partials.header')
     </div>
     <div class="row pt-1" style="height: 80vh; overflow: auto">
@@ -12,8 +12,20 @@
         @include('partials.nav-panels')
     </div>
     <!-- Code begins here -->
-    <a href="#" class="float">
-        <i class="fas fa-plus my-float fa-2x"></i>
+    <a href="#" class="float" id="menu-share">
+        <i class="fas fa-plus my-float"></i>
     </a>
+    <ul class="float-actions">
+        <li>
+            <a href="#">
+                <i class="fas fa-search my-float"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fas fa-plus my-float"></i>
+            </a>
+        </li>
+    </ul>
 </div>
 @endsection

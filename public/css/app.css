@@ -16579,20 +16579,181 @@ body {
 
 /* Style for bloat button */
 
+.label-container {
+  position: fixed;
+  bottom: 48px;
+  right: 105px;
+  display: table;
+  visibility: hidden;
+}
+
+.label-text {
+  color: white;
+  background: rgba(51, 51, 51, 0.5);
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.label-arrow {
+  display: table-cell;
+  vertical-align: middle;
+  color: #333;
+  opacity: 0.5;
+}
+
 .float {
   position: fixed;
   width: 55px;
   height: 55px;
-  bottom: 95px;
+  bottom: 100px;
   right: 25px;
-  background-color: #0A4081;
+  background-color: #C98D19;
   color: white;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 1px 1px 1px #3e3e3e;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  -webkit-animation: bot-to-top 2s ease-out;
+          animation: bot-to-top 2s ease-out;
+}
+
+ul.float-actions {
+  position: fixed;
+  right: 25px;
+  padding-bottom: 20px;
+  bottom: 120px;
+  z-index: 100;
+}
+
+ul.float-actions li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+ul.float-actions li a {
+  background-color: #C98D19;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+ul.float-actions:hover {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .my-float {
-  margin-top: 14px;
+  font-size: 24px;
+  margin-top: 18px;
+}
+
+a#menu-share + ul {
+  visibility: hidden;
+}
+
+a#menu-share:hover + ul {
+  visibility: visible;
+  -webkit-animation: scale-in 0.5s;
+          animation: scale-in 0.5s;
+}
+
+a#menu-share i {
+  -webkit-animation: rotate-in 0.5s;
+          animation: rotate-in 0.5s;
+}
+
+a#menu-share:hover > i {
+  -webkit-animation: rotate-out 0.5s;
+          animation: rotate-out 0.5s;
+}
+
+@-webkit-keyframes bot-to-top {
+  0% {
+    bottom: -40px;
+  }
+
+  50% {
+    bottom: 40px;
+  }
+}
+
+@keyframes bot-to-top {
+  0% {
+    bottom: -40px;
+  }
+
+  50% {
+    bottom: 40px;
+  }
+}
+
+@-webkit-keyframes scale-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-out {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate-out {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
 }
 
