@@ -15,28 +15,7 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="min-vh-75" style="background-color: orange">
-    <div class="container-fluid">
-        <div class="row d-flex flex-column justify-content-center bg-primary" style="height: 10vh">
-            <p>Teste</p>
-        </div>
-        <div class="row d-flex flex-column justify-content-center bg-secondary" style="height: 80vh; overflow: auto">
-            <div class="pb-3 pt-3">
-                <p class="display-1">Teste</p>
-                <p class="display-1">Teste</p>
-                <p class="display-1">Teste</p>
-                <p class="display-1">Teste</p>
-                <p class="display-1">Teste</p>
-                <p class="display-1">Teste</p>
-            </div>
-        </div>
-        <div class="row d-flex flex-column justify-content-center bg-dark" style="height: 10vh">
-            <p>Teste</p>
-        </div>
-        <!-- Code begins here -->
-        <a href="#" class="float">
-            <i class="fas fa-plus my-float fa-2x"></i>
-        </a>
-    </div>
+<body>
+    @yield('content')
 </body>
 </html>

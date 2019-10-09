@@ -16528,6 +16528,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-color: #e6e7e8;
+}
+
 .bg-orangevc {
   background-color: #C98D19;
 }
@@ -16554,15 +16558,11 @@ a.text-dark:focus {
 
 /* Style for Tab Nav */
 
-.content-mobileViewport {
-  background-color: red;
-  margin: 0px;
-  padding: 0px;
-  height: 80vh;
+.nav-tabPanels {
+  border-bottom: 0px;
 }
 
 .nav-tabPanels a.nav-item {
-  background-color: #0A4081;
   border: none;
   padding: 1rem;
 }
@@ -16570,6 +16570,11 @@ a.text-dark:focus {
 .nav-tabPanels .nav-link.active {
   background-color: #0A4081;
   color: white;
+}
+
+.list-task-group {
+  margin-bottom: 5px;
+  border: 0;
 }
 
 /* Style for bloat button */
@@ -16580,8 +16585,8 @@ a.text-dark:focus {
   height: 55px;
   bottom: 95px;
   right: 25px;
-  background-color: white;
-  color: #0A4081;
+  background-color: #0A4081;
+  color: white;
   border-radius: 50px;
   text-align: center;
   box-shadow: 1px 1px 1px #3e3e3e;
