@@ -13,7 +13,7 @@
     </div>
     <!-- Code begins here -->
     <a href="#" class="float" id="menu-share">
-        <i class="fas fa-plus my-float"></i>
+        <i class="fas fa-bars my-float float-button-action"></i>
     </a>
     <ul class="float-actions">
         <li>

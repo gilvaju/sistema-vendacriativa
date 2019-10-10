@@ -16619,6 +16619,10 @@ body {
           animation: bot-to-top 2s ease-out;
 }
 
+.float i {
+  margin-top: 17px !important;
+}
+
 ul.float-actions {
   position: fixed;
   right: 25px;
@@ -16659,101 +16663,5 @@ a#menu-share + ul {
 
 a#menu-share:hover + ul {
   visibility: visible;
-  -webkit-animation: scale-in 0.5s;
-          animation: scale-in 0.5s;
-}
-
-a#menu-share i {
-  -webkit-animation: rotate-in 0.5s;
-          animation: rotate-in 0.5s;
-}
-
-a#menu-share:hover > i {
-  -webkit-animation: rotate-out 0.5s;
-          animation: rotate-out 0.5s;
-}
-
-@-webkit-keyframes bot-to-top {
-  0% {
-    bottom: -40px;
-  }
-
-  50% {
-    bottom: 40px;
-  }
-}
-
-@keyframes bot-to-top {
-  0% {
-    bottom: -40px;
-  }
-
-  50% {
-    bottom: 40px;
-  }
-}
-
-@-webkit-keyframes scale-in {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes scale-in {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes rotate-in {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-in {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotate-out {
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes rotate-out {
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
 }
 

@@ -50,6 +50,10 @@
   z-index: 1000
   animation: bot-to-top 2s ease-out
 
+.float
+  & i
+    margin-top: 17px !important
+	
 ul.float-actions
   position: fixed
   right: 25px
@@ -85,40 +89,40 @@ a#menu-share
 
   &:hover + ul
     visibility: visible
-    animation: scale-in 0.5s
+    // animation: scale-in 0.5s
 
-  i
-    animation: rotate-in 0.5s
+//   i
+    // animation: rotate-in 0.5s
 
-  &:hover > i
-    animation: rotate-out 0.5s
+//   &:hover > i
+    // animation: rotate-out 0.5s
 
-@keyframes bot-to-top
-  0%
-    bottom: -40px
+// @keyframes bot-to-top
+//   0%
+//     bottom: -40px
 
-  50%
-    bottom: 40px
+//   50%
+//     bottom: 40px
 
-@keyframes scale-in
-  from
-    transform: scale(0)
-    opacity: 0
+// @keyframes scale-in
+//   from
+//     transform: scale(0)
+//     opacity: 0
 
-  to
-    transform: scale(1)
-    opacity: 1
+//   to
+//     transform: scale(1)
+//     opacity: 1
 
-@keyframes rotate-in
-  from
-    transform: rotate(0deg)
+// @keyframes rotate-in
+//   from
+//     transform: rotate(0deg)
 
-  to
-    transform: rotate(360deg)
+//   to
+//     transform: rotate(360deg)
 
-@keyframes rotate-out
-  from
-    transform: rotate(360deg)
+// @keyframes rotate-out
+//   from
+//     transform: rotate(360deg)
 
-  to
-    transform: rotate(0deg)
+//   to
+//     transform: rotate(0deg)
