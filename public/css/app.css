@@ -16636,15 +16636,28 @@ ul.float-actions li {
   margin-bottom: 10px;
 }
 
+ul.float-actions li button,
 ul.float-actions li a {
   background-color: #C98D19;
   color: white;
   border-radius: 50px;
   text-align: center;
   box-shadow: 2px 2px 3px #999;
+  display: block;
+}
+
+ul.float-actions li button {
   width: 60px;
   height: 60px;
-  display: block;
+}
+
+ul.float-actions li button i {
+  margin-top: 4px;
+}
+
+ul.float-actions li a {
+  width: 60px;
+  height: 60px;
 }
 
 ul.float-actions:hover {

@@ -11,7 +11,7 @@
     <div class="row d-flex flex-column justify-content-center bg-bluevc" style="height: 10vh">
         @include('partials.nav-panels')
     </div>
-    <!-- Code begins here -->
+    <!-- Flot button actions -->
     <a href="#" class="float" id="menu-share">
         <i class="fas fa-bars my-float float-button-action"></i>
     </a>
@@ -22,10 +22,12 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                 <i class="fas fa-plus my-float"></i>
-            </a>
+            </button>
         </li>
     </ul>
+    
+    @include('panels.create-task')
 </div>
 @endsection
