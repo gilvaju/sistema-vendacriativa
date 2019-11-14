@@ -16556,6 +16556,10 @@ body {
   height: 50px;
 }
 
+.notifications-general {
+  margin-top: 1rem;
+}
+
 /* Style for Tab Nav */
 
 .nav-tabPanels {
