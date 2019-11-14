@@ -1,7 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <pre>{{ $errors }}</pre>
+            @if ($errors->any())
+                <div class="alert alert-danger" role="alert">
+                   Ops, algo deu errado, tente novamente
+                </div>
+            @endif
         </div>
         <div class="col-12">
             <div class="tab-content">
