@@ -27,35 +27,36 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6">
-                            <input class="form-control" type="hidden" name="owner_id" value="{{ Auth::user()->name }}">
-                            <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                        <div class="col-12">
+                            <input class="form-control" type="hidden" name="owner_id" value="{{ Auth::user()->id }}">
+                            <input class="form-control" type="date" name="delivery_date" value="2011-08-19" id="example-date-input">
                         </div>
-                        <div class="col-6">
-                            <select name="status" class="custom-select">
-                                <option value="" disabled selected>Status</option>
-                                <option value="Aberto">Aberto</option>
-                                <option value="Pendente">Pendente</option>
-                                <option value="Fechado">Fechado</option>
-                            </select>
-                        </div>
+{{--                        <div class="col-6">--}}
+{{--                            <select name="status" class="custom-select">--}}
+{{--                                <option value="" disabled selected>Status</option>--}}
+{{--                                <option value="Aberto">Aberto</option>--}}
+{{--                                <option value="Pendente">Pendente</option>--}}
+{{--                                <option value="Fechado">Fechado</option>--}}
+{{--                            </select>--}}
+{{--                        </div>--}}
                     </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <select name="client_id" class="custom-select">
-                                <option value="" disabled selected>Cliente</option>
-                                <option value="OB">Oborrachão</option>
-                                <option value="CV">Centro Vitta</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <select name="responsible_designer" class="custom-select">
-                                <option value="" disabled  selected>Designer</option>
-                                <option value="JN">Nicácio</option>
-                                <option value="PH">Phill</option>
-                            </select>
-                        </div>
-                    </div>
+{{--                    <div class="row">--}}
+{{--                        <div class="col-6">--}}
+{{--                            <select name="client_id" class="custom-select">--}}
+{{--                                <option value="" disabled selected>Cliente</option>--}}
+{{--                                <option value="OB">Oborrachão</option>--}}
+{{--                                <option value="CV">Centro Vitta</option>--}}
+{{--                                <option value="CV">Infante</option>--}}
+{{--                            </select>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-6">--}}
+{{--                            <select name="responsible_designer" class="custom-select">--}}
+{{--                                <option value="" disabled  selected>Designer</option>--}}
+{{--                                <option value="JN">Nicácio</option>--}}
+{{--                                <option value="PH">Phill</option>--}}
+{{--                            </select>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>

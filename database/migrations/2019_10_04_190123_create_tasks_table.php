@@ -17,11 +17,11 @@ class CreateTasksTable extends Migration
             $table->bigIncrements('id');
             $table->text('title');
             $table->text('description')->nullable();
-            $table->text('status');
+            $table->integer('status')->nullable();
             $table->dateTime('delivery_date')->nullable();
-            $table->text('owner_id');
-            $table->text('responsible_designer');
-            $table->text('client_id');
+            $table->integer('owner_id')->nullable();
+            $table->integer('responsible_designer')->nullable();
+            $table->integer('client_id')->nullable();
             $table->timestamps();
         });
     }

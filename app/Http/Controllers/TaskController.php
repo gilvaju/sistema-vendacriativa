@@ -38,13 +38,13 @@ class TaskController extends Controller
         request()->validate([
             'title' => ['required'],
             'description' => ['required'],
-            'status' => ['required'],
+//            'status' => ['required'],
             'delivery_date' => ['required'],
-            'owner_id' => ['required'],
-            'responsible_designer' => ['required'],
-            'client_id' => ['required']
+//            'owner_id' => ['required'],
+//            'responsible_designer' => ['required'],
+//            'client_id' => ['required']
         ]);
-        
+
         $task->create($request->all());
         return redirect('/home');
     }
