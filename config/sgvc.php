@@ -4,8 +4,9 @@ return [
 
     'status' => [
         '1' => 'Aberta',
-        '2' => 'Concluída',
-        '3' => 'Pendente',
+        '2' => 'Pendente',
+        '3' => 'Aprovar',
+        '4' => 'Concluída',
     ],
 
     'clients' => [
