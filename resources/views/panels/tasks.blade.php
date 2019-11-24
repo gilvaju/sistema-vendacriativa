@@ -1,5 +1,5 @@
 <div class="list-group list-tasks-group mt-2">
-  @foreach($tasks as $task)
+  @foreach($openedTasks as $task)
     <div class="list-group-item list-task-group">
         <div class="row">
             <div class="col-8">

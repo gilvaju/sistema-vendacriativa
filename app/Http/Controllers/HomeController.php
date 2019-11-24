@@ -23,7 +23,10 @@ class HomeController extends Controller
      */
     public function index(Task $task)
     {
-        $tasks = $task->all();
-        return view('dashboard', compact('tasks', 'tasks'));
+        $idStatusOpened = array_search('Aberta', config('sgvc.status'));
+        $idStatusClosed = array_search('Concluída', config('sgvc.status'));
+        return view('dashboard')
+            ->with('openedTasks', $task->where('status', $idStatusOpened)->get())
+            ->with('closedTasks', $task->where('status', $idStatusClosed)->get());
     }
 }
