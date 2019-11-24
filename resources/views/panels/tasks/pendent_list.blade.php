@@ -1,7 +1,14 @@
+@if(count($pendentTasks))
+    <div class="type-tasks-title">
+        <h5>Tarefas pendentes</h5>
+        <hr>
+    </div>
+@endif
+
 @foreach($pendentTasks as $task)
     <div class="list-group-item list-task-group pendent-list">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 task-content-item">
                 <h5>{{ $task->title }}</h5>
                 <p>{{ $task->description }}</p>
                 <span class="badge badge-primary p-1">{{ $task->responsible->name }}</span>
