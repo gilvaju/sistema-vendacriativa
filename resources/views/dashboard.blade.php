@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid" style="height: 100vh">
     <div class="row d-flex flex-column justify-content-center bg-dark text-white" style="height: 10vh">
         @include('partials.header')
     </div>
     <div class="row pt-1" style="height: 80vh; overflow: auto">
         @include('partials.panels-content')
     </div>
-    <div class="row d-flex flex-column justify-content-center bg-bluevc" style="height: 10vh">
+    <div class="row d-flex flex-column justify-content-center bg-bluevc" style="height: 10vh; position: fixed; width: 100%;">
         @include('partials.nav-panels')
     </div>
     <!-- Flot button actions -->
@@ -27,7 +27,7 @@
             </button>
         </li>
     </ul>
-    
-    @include('panels.create-task')
+
+    @include('partials.create-task')
 </div>
 @endsection
