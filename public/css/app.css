@@ -16561,7 +16561,7 @@ body {
 }
 
 .logo {
-  height: 45px;
+  height: 30px;
   margin-top: 10px;
 }
 
@@ -16615,13 +16615,13 @@ body {
 /* Style for Tab Nav */
 
 .nav-tabPanels {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 .nav-tabPanels a.nav-item {
   border-radius: 0;
   border: none;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 .nav-tabPanels .nav-link.active {
