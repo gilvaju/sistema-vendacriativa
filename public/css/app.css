@@ -16560,6 +16560,11 @@ body {
   margin-top: 1rem;
 }
 
+.logo {
+  height: 45px;
+  margin-top: 10px;
+}
+
 .divider-list {
   border: 1px solid #C98D19;
   width: 100%;
@@ -16584,12 +16589,13 @@ body {
 }
 
 .nav-tabPanels a.nav-item {
+  border-radius: 0;
   border: none;
   padding: 1rem;
 }
 
 .nav-tabPanels .nav-link.active {
-  background-color: #0A4081;
+  background-color: #C98D19;
   color: white;
 }
 

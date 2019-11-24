@@ -2,11 +2,8 @@
 
 @section('content')
 <div class="container-fluid" class="full-content">
-    <div class="row d-flex flex-column justify-content-center bg-dark text-white" style="height: 10vh">
+    <div class="row d-flex flex-column justify-content-center text-white bg-dark">
         @include('partials.header')
-    </div>
-    <div class="row d-flex flex-column justify-content-center bg-bluevc">
-        @include('partials.nav-panels')
     </div>
     <div class="row pt-1 mb-5">
         @include('partials.panels-content')
