@@ -16591,9 +16591,8 @@ body {
   margin: 0;
 }
 
-.list-task-group .task-content-item {
-  padding-left: 5px;
-  padding-right: 5px;
+.task-content-item {
+  margin-left: -10px;
 }
 
 .closed-list {
