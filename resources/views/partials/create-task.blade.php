@@ -29,6 +29,7 @@
                     <div class="row">
                         <div class="col-12">
                             <input class="form-control" type="hidden" name="owner_id" value="{{ Auth::user()->id }}">
+                            <input class="form-control" type="hidden" name="status" value="1">
                             <input class="form-control" type="date" name="delivery_date" value="2011-08-19" id="example-date-input">
                         </div>
 {{--                        <div class="col-6">--}}
