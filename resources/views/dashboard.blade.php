@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid" style="height: 100vh">
+<div class="container-fluid" class="full-content">
     <div class="row d-flex flex-column justify-content-center bg-dark text-white" style="height: 10vh">
         @include('partials.header')
     </div>
