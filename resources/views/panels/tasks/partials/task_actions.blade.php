@@ -1,4 +1,4 @@
-<div class="col-2">
+<div class="col-3">
     <div class="row mb-1">
         <div class="col-6">
             <form action="{{ route('task.destroy', $task->id) }}" method="POST">

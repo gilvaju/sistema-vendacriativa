@@ -8,7 +8,7 @@
 @foreach($openedTasks as $task)
     <div class="list-group-item list-task-group opened-list">
         <div class="row no-gutters">
-            <div class="col-10 task-content-item">
+            <div class="col-9 task-content-item">
                 <h5>{{ $task->title }}</h5>
                 <p>{{ $task->description }}</p>
                 <span class="badge badge-primary p-1">{{ $task->responsible->name }}</span>
