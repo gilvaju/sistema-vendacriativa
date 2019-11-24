@@ -4,7 +4,7 @@
             <form action="{{ route('task.destroy', $task->id) }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button type="button" class="btn border-0 bg-white text-danger btn-sm">
+                <button type="button" class="btn border-0 bg-white text-danger">
                     <i class="fas fa-stop-circle"></i>
                 </button>
             </form>
@@ -13,7 +13,7 @@
             <form action="{{ route('task.destroy', $task->id) }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button type="button" class="btn border-0 bg-white text-success btn-sm">
+                <button type="button" class="btn border-0 bg-white text-success">
                     <i class="fas fa-check-double"></i>
                 </button>
             </form>
@@ -24,7 +24,7 @@
             <form action="{{ route('task.destroy', $task->id) }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button type="button" class="btn border-0 bg-white text-primary btn-sm">
+                <button type="button" class="btn border-0 bg-white text-primary">
                     <i class="fas fa-check"></i>
                 </button>
             </form>
@@ -33,7 +33,7 @@
             <form action="{{ route('task.destroy', $task->id) }}" method="POST">
                 @csrf
                 @method('DELETE')
-                <button type="button" class="btn border-0 bg-white text-info btn-sm">
+                <button type="button" class="btn border-0 bg-white text-info">
                     <i class="far fa-trash-alt"></i>
                 </button>
             </form>
