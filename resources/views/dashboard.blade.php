@@ -5,11 +5,11 @@
     <div class="row d-flex flex-column justify-content-center bg-dark text-white" style="height: 10vh">
         @include('partials.header')
     </div>
-    <div class="row pt-1" style="height: 80vh; overflow: auto">
-        @include('partials.panels-content')
-    </div>
-    <div class="row d-flex flex-column justify-content-center bg-bluevc" style="height: 10vh; position: fixed; width: 100%;">
+    <div class="row d-flex flex-column justify-content-center bg-bluevc">
         @include('partials.nav-panels')
+    </div>
+    <div class="row pt-1 mb-5">
+        @include('partials.panels-content')
     </div>
     <!-- Flot button actions -->
     <a href="#" class="float" id="menu-share">
