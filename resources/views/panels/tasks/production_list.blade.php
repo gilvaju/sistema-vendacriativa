@@ -1,4 +1,4 @@
-@foreach($closedTasks as $task)
+@foreach($productionTasks as $task)
     <div class="list-group-item list-task-group todo-list">
         <div class="row">
             <div class="col-8">
@@ -11,3 +11,7 @@
         </div>
     </div>
   @endforeach
+
+@if(count($productionTasks))
+    <hr class="divider-list">
+@endif

@@ -11,3 +11,7 @@
         </div>
     </div>
   @endforeach
+
+@if(count($aproveTasks))
+    <hr class="divider-list">
+@endif

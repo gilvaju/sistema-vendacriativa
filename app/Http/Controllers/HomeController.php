@@ -27,12 +27,14 @@ class HomeController extends Controller
         $idStatusOpened = array_search('Aberta', config('sgvc.status'));
         $idStatusPendent = array_search('Pendente', config('sgvc.status'));
         $idStatusAprove = array_search('Aprovar', config('sgvc.status'));
+        $idStatusProduction = array_search('Produção', config('sgvc.status'));
         $idStatusClosed = array_search('Concluída', config('sgvc.status'));
 
         return view('dashboard')
             ->with('openedTasks', $task->where('status', $idStatusOpened)->get())
             ->with('pendentTasks', $task->where('status', $idStatusPendent)->get())
             ->with('aproveTasks', $task->where('status', $idStatusAprove)->get())
+            ->with('productionTasks', $task->where('status', $idStatusProduction)->get())
             ->with('closedTasks', $task->where('status', $idStatusClosed)->get())
             ->with('users', $user->all());
     }

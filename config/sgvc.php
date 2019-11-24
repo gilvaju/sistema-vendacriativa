@@ -7,6 +7,7 @@ return [
         '2' => 'Pendente',
         '3' => 'Aprovar',
         '4' => 'Concluída',
+        '5' => 'Produção',
     ],
 
     'clients' => [

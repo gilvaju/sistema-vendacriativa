@@ -49,16 +49,16 @@
                     </div>
                     <div class="row mt-1">
                         <div class="col-6">
-                            <select name="responsible_designer" class="custom-select">
-                                @foreach($users as $id => $user)
-                                    <option value="{{ $id }}" >{{ $user->name }}</option>
+                            <select name="responsible_id" class="custom-select">
+                                @foreach($users as $user)
+                                    <option value="{{ $user->id }}" >{{ $user->name }}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="col-6">
                             <select name="owner_id" class="custom-select">
-                                @foreach($users as $id => $user)
-                                    <option value="{{ $id }}" >{{ $user->name }}</option>
+                                @foreach($users as $user)
+                                    <option value="{{ $user->id }}" >{{ $user->name }}</option>
                                 @endforeach
                             </select>
                         </div>
