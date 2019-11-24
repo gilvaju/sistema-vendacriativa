@@ -26,38 +26,43 @@
                             <textarea class="form-control mb-1" name="description" id="" rows="3"></textarea>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <input class="form-control" type="hidden" name="owner_id" value="{{ Auth::user()->id }}">
-                            <input class="form-control" type="hidden" name="status" value="1">
+                    <div class="row mt-1">
+                        <div class="col-6">
                             <input class="form-control" type="date" name="delivery_date" value="2011-08-19" id="example-date-input">
                         </div>
-{{--                        <div class="col-6">--}}
-{{--                            <select name="status" class="custom-select">--}}
-{{--                                <option value="" disabled selected>Status</option>--}}
-{{--                                <option value="Aberto">Aberto</option>--}}
-{{--                                <option value="Pendente">Pendente</option>--}}
-{{--                                <option value="Fechado">Fechado</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
+                        <div class="col-6">
+                            <select name="status" class="custom-select">
+                                @foreach(config('sgvc.status') as $id => $status)
+                                    <option value="{{ $id }}" >{{ $status }}</option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
-{{--                    <div class="row">--}}
-{{--                        <div class="col-6">--}}
-{{--                            <select name="client_id" class="custom-select">--}}
-{{--                                <option value="" disabled selected>Cliente</option>--}}
-{{--                                <option value="OB">Oborrachão</option>--}}
-{{--                                <option value="CV">Centro Vitta</option>--}}
-{{--                                <option value="CV">Infante</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-6">--}}
-{{--                            <select name="responsible_designer" class="custom-select">--}}
-{{--                                <option value="" disabled  selected>Designer</option>--}}
-{{--                                <option value="JN">Nicácio</option>--}}
-{{--                                <option value="PH">Phill</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
+                    <div class="row mt-1">
+                        <div class="col-12">
+                            <select name="client_id" class="custom-select">
+                                @foreach(config('sgvc.clients') as $id => $client)
+                                    <option value="{{ $id }}" >{{ $client }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-6">
+                            <select name="responsible_designer" class="custom-select">
+                                @foreach($users as $id => $user)
+                                    <option value="{{ $id }}" >{{ $user->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <select name="owner_id" class="custom-select">
+                                @foreach($users as $id => $user)
+                                    <option value="{{ $id }}" >{{ $user->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>

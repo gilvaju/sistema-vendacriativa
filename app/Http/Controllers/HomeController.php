@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Task;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -21,16 +22,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(Task $task)
+    public function index(Task $task, User $user)
     {
         $idStatusOpened = array_search('Aberta', config('sgvc.status'));
         $idStatusPendent = array_search('Pendente', config('sgvc.status'));
         $idStatusAprove = array_search('Aprovar', config('sgvc.status'));
         $idStatusClosed = array_search('Concluída', config('sgvc.status'));
+
         return view('dashboard')
             ->with('openedTasks', $task->where('status', $idStatusOpened)->get())
             ->with('pendentTasks', $task->where('status', $idStatusPendent)->get())
             ->with('aproveTasks', $task->where('status', $idStatusAprove)->get())
-            ->with('closedTasks', $task->where('status', $idStatusClosed)->get());
+            ->with('closedTasks', $task->where('status', $idStatusClosed)->get())
+            ->with('users', $user->all());
     }
 }
