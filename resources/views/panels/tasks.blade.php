@@ -1,4 +1,24 @@
 <div class="list-group list-tasks-group mt-2">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <ul>
+                    <li><i class="fas fa-step-backward"></i> Aberta</li>
+                    <li><i class="fab fa-product-hunt"></i> Produção</li>
+                    <li><i class="fas fa-stop-circle"></i> Pendente</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <ul>
+                    <li><i class="fas fa-check-double"></i> Concluída</li>
+                    <li><i class="fas fa-check"></i> Para aprovação</li>
+                    <li><i class="far fa-trash-alt"></i> Excluir</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     @include('panels.tasks.pendent_list')
     @include('panels.tasks.aprove_list')
     @include('panels.tasks.production_list')

@@ -23,5 +23,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::post('/task/opened/{task}', 'TaskController@opened')->name('task.opened');
+Route::post('/task/completed/{task}', 'TaskController@completed')->name('task.completed');
+Route::post('/task/aprove/{task}', 'TaskController@aprove')->name('task.aprove');
+Route::post('/task/production/{task}', 'TaskController@production')->name('task.production');
+Route::post('/task/pendent/{task}', 'TaskController@pendent')->name('task.pendent');
+
 // Route::resource('client', 'ClientController');
 Route::resource('task', 'TaskController');
