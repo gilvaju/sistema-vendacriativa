@@ -8,10 +8,7 @@
 @foreach($aproveTasks as $task)
     <div class="list-group-item list-task-group content-task-aprove-list aprove-list">
         <div class="row no-gutters">
-            <h5>{{ $task->title }}</h5>
-            <p>{{ $task->description }}</p>
-            @include('panels.tasks.partials.badgets')
-            @include('panels.tasks.partials.task_actions')
+            @include('panels.tasks.partials.content_task')
         </div>
     </div>
   @endforeach
