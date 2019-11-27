@@ -16575,8 +16575,16 @@ body {
   padding: 0;
 }
 
+.title-task-opened-list {
+  margin-top: 1rem;
+}
+
 .title-task-opened-list hr {
   border: 0.03rem solid darkgrey;
+}
+
+.title-task-production-list {
+  margin-top: 1rem;
 }
 
 .title-task-production-list hr {
@@ -16589,6 +16597,10 @@ body {
 
 .title-task-pendent-list hr {
   border: 0.03rem solid darkred;
+}
+
+.title-task-closed-list {
+  margin-top: 1rem;
 }
 
 .title-task-closed-list hr {
