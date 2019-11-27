@@ -1,4 +1,4 @@
-<div class="list-group list-tasks-group mt-2">
+<div class="container-fluid">
     @include('panels.tasks.partials.process')
     @include('panels.tasks.pendent_list')
     @include('panels.tasks.aprove_list')

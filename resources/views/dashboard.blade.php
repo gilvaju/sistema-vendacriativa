@@ -2,12 +2,13 @@
 
 @section('content')
 <div class="container-fluid" class="full-content">
-    <div class="row d-flex flex-column justify-content-center text-white bg-dark">
+    <div class="row">
         @include('partials.header')
     </div>
-    <div class="row pt-1 mb-5">
+    <div class="row">
         @include('partials.panels-content')
     </div>
+
     <!-- Flot button actions -->
     <a href="#" class="float" id="menu-share">
         <i class="fas fa-bars my-float float-button-action"></i>

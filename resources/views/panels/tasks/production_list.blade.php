@@ -1,8 +1,5 @@
 @if(count($productionTasks))
-    <div class="type-tasks-title">
-        <h5>Tarefas em produção</h5>
-        <hr>
-    </div>
+    @include('panels.tasks.partials.title_task')
 @endif
 
 @foreach($productionTasks as $task)

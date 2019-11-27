@@ -1,11 +1,7 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            @if ($errors->any())
-                <div class="alert alert-danger notifications-general" role="alert">
-                   Ops, algo deu errado, tente novamente
-                </div>
-            @endif
+            @include('partials.errors')
         </div>
         <div class="col-12">
             <div class="tab-content">

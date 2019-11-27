@@ -1,8 +1,5 @@
 @if(count($pendentTasks))
-    <div class="type-tasks-title">
-        <h5>Tarefas pendentes</h5>
-        <hr>
-    </div>
+    @include('panels.tasks.partials.title_task')
 @endif
 
 @foreach($pendentTasks as $task)
