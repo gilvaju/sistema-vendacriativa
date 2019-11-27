@@ -1,4 +1,4 @@
-<div class="container-fluid mt-3 mb-2">
+<div class="container-fluid mt-3 mb-2 pl-0 pr-0">
     <div class="row no-gutters d-flex justify-content-center">
         <div class="col-1"><i class="fas fa-step-backward text-info"></i></div>
         <div class="col-1"><i class="fas fa-chevron-right"></i></div>

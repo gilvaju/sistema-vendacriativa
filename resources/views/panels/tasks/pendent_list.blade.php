@@ -1,5 +1,5 @@
 @if(count($pendentTasks))
-    <section class="container-fluid pendent-list">
+    <section class="container-fluid section-list-group pendent-list">
         @include('panels.tasks.partials.title_task')
         @foreach($pendentTasks as $task)
             <ul class="list-group">

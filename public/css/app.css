@@ -16528,6 +16528,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-color: white;
+}
+
 .logo {
   height: 30px;
   margin-top: 10px;
@@ -16549,76 +16553,36 @@ a.text-dark:focus {
   margin-top: 1rem;
 }
 
-.type-tasks-title h5 {
-  font-size: 1.1rem;
-  margin-bottom: 0;
+.section-list-group {
+  margin: 1rem 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.type-tasks-title hr {
-  margin: 0 0 5px 0;
-  padding: 0;
+.section-list-group .list-group .list-group-item {
+  border: 0;
+  background-color: #f7f7f7;
+  margin-bottom: 0.4rem;
 }
 
-.title-task-opened-list {
-  margin-top: 1rem;
+.pendent-list .list-group .list-group-item {
+  border-left: 5px solid lightsalmon;
 }
 
-.title-task-opened-list hr {
-  border: 0.03rem solid darkgrey;
+.aprove-list .list-group .list-group-item {
+  border-left: 5px solid lightseagreen;
 }
 
-.title-task-production-list {
-  margin-top: 1rem;
+.production-list .list-group .list-group-item {
+  border-left: 5px solid lightblue;
 }
 
-.title-task-production-list hr {
-  border: 0.03rem solid dodgerblue;
+.opened-list .list-group .list-group-item {
+  border-left: 5px solid lightgrey;
 }
 
-.title-task-aprove-list hr {
-  border: 0.03rem solid green;
-}
-
-.title-task-pendent-list hr {
-  border: 0.03rem solid darkred;
-}
-
-.title-task-closed-list {
-  margin-top: 1rem;
-}
-
-.title-task-closed-list hr {
-  border: 0.03rem solid darkslategrey;
-}
-
-.content-task-opened-list {
-  border-left: 5px solid darkgrey !important;
-}
-
-.content-task-production-list {
-  border-left: 5px solid dodgerblue !important;
-}
-
-.content-task-aprove-list {
-  border-left: 5px solid green !important;
-}
-
-.content-task-pendent-list {
-  border-left: 5px solid darkred !important;
-}
-
-.content-task-closed-list {
-  border-left: 5px solid darkslategrey !important;
-}
-
-.list-task-group h5 {
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-
-.list-task-group p {
-  font-size: 0.8rem;
-  margin: 0;
+.closed-list .list-group .list-group-item {
+  background-color: rgba(161, 211, 154, 0.6);
 }
 
 /* Style for Tab Nav */

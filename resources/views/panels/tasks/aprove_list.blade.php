@@ -1,5 +1,5 @@
 @if(count($aproveTasks))
-    <section class="container-fluid pendent-list">
+    <section class="container-fluid section-list-group aprove-list">
         @include('panels.tasks.partials.title_task')
         @foreach($aproveTasks as $task)
             <ul class="list-group">
