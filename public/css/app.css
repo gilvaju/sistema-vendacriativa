@@ -16573,7 +16573,27 @@ body {
 .type-tasks-title hr {
   margin: 0 0 5px 0;
   padding: 0;
-  border: 0.04rem solid #C98D19;
+  border: 0.03rem solid #C98D19;
+}
+
+.list-group-item + .opened-list {
+  border-left: 5px solid darkgrey;
+}
+
+.list-group-item + .production-list {
+  border-left: 5px solid dodgerblue;
+}
+
+.list-group-item + .aprove-list {
+  border-left: 5px solid green;
+}
+
+.list-group-item + .pendent-list {
+  border-left: 5px solid darkred;
+}
+
+.list-group-item + .closed-list {
+  border-left: 5px solid darkslategrey;
 }
 
 .list-task-group h5 {
@@ -16588,22 +16608,6 @@ body {
 
 .task-content-item {
   margin-left: -10px;
-}
-
-.closed-list {
-  background-color: rgba(15, 110, 6, 0.25);
-}
-
-.pendent-list {
-  background-color: rgba(213, 42, 16, 0.73);
-}
-
-.aprove-list {
-  background-color: rgba(63, 39, 213, 0.31);
-}
-
-.production-list {
-  background-color: rgba(43, 160, 213, 0.31);
 }
 
 /* Style for Tab Nav */
