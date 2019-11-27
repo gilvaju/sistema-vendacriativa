@@ -19,7 +19,3 @@
         </div>
     </div>
   @endforeach
-
-@if(count($productionTasks))
-    <hr class="divider-list">
-@endif

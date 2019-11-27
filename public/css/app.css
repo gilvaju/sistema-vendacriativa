@@ -16565,20 +16565,15 @@ body {
   margin-top: 10px;
 }
 
-.divider-list {
-  border: 0.04rem solid #C98D19;
-  width: 100%;
-  margin: 0.25rem 0 0.5rem 0;
-}
-
 .type-tasks-title h5 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 0;
 }
 
 .type-tasks-title hr {
   margin: 0 0 5px 0;
   padding: 0;
+  border: 0.04rem solid #C98D19;
 }
 
 .list-task-group h5 {

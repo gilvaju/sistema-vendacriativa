@@ -19,7 +19,3 @@
         </div>
     </div>
   @endforeach
-
-@if(count($openedTasks))
-    <hr class="divider-list">
-@endif

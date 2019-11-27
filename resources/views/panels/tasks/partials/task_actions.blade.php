@@ -19,8 +19,8 @@
         <div class="col-4">
             <form action="{{ route('task.pendent', $task->id) }}" method="POST">
                 @csrf
-                <button type="submit" class="btn border-0 bg-white text-danger">
-                    <i class="fas fa-stop-circle"></i>
+                <button type="submits" class="btn border-0 bg-white text-primary">
+                    <i class="fas fa-check"></i>
                 </button>
             </form>
         </div>
@@ -37,8 +37,8 @@
         <div class="col-4">
             <form action="{{ route('task.aprove', $task->id) }}" method="POST">
                 @csrf
-                <button type="submits" class="btn border-0 bg-white text-primary">
-                    <i class="fas fa-check"></i>
+                <button type="submit" class="btn border-0 bg-white text-danger">
+                    <i class="fas fa-stop-circle"></i>
                 </button>
             </form>
         </div>
