@@ -3,9 +3,7 @@
 @endif
 
 @foreach($openedTasks as $task)
-    <div class="list-group-item list-task-group">
-        <div class="row no-gutters">
-            @include('panels.tasks.partials.content_task')
-        </div>
+    <div class="container-fluid">
+        @include('panels.tasks.partials.content_task')
     </div>
   @endforeach
