@@ -16595,6 +16595,26 @@ body {
   background-color: rgba(161, 211, 154, 0.6);
 }
 
+.text-pendent {
+  color: lightsalmon;
+}
+
+.text-aprove {
+  color: lightseagreen;
+}
+
+.text-production {
+  color: lightblue;
+}
+
+.text-opened {
+  color: lightgrey;
+}
+
+.text-closed {
+  color: rgba(161, 211, 154, 0.6);
+}
+
 /* Style for Tab Nav */
 
 .nav-tabs-header {
