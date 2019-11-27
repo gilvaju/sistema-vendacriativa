@@ -1,10 +1,11 @@
-<section class="container-fluid aprove-list">
-    @if(count($aproveTasks))
+@if(count($aproveTasks))
+    <section class="container-fluid pendent-list">
         @include('panels.tasks.partials.title_task')
-    @endif
-    @foreach($aproveTasks as $task)
-        <ul class="list-group">
-            @include('panels.tasks.partials.content_task')
-        </ul>
-    @endforeach
-</section>
+        @foreach($aproveTasks as $task)
+            <ul class="list-group">
+                @include('panels.tasks.partials.content_task')
+            </ul>
+        @endforeach
+    </section>
+@endif
+

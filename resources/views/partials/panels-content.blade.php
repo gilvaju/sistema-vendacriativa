@@ -1,9 +1,7 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            @include('partials.errors')
-        </div>
-        <div class="col-12">
+        @include('partials.errors')
+        <div class="col-12 col-xl-4">
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="nav-tasks" role="tabpanel" aria-labelledby="nav-tasks-tab">
                     @include('panels.tasks')
