@@ -49,22 +49,45 @@ body
     hr
         margin: 0 0 5px 0
         padding: 0
-        border: 0.03rem solid $orangevc
 
-.list-group-item + .opened-list
-    border-left: 5px solid darkgrey
+// Tasks Title
 
-.list-group-item + .production-list
-    border-left: 5px solid dodgerblue
+.title-task-opened-list
+    hr
+        border: 0.03rem solid darkgrey
 
-.list-group-item + .aprove-list
-    border-left: 5px solid green
+.title-task-production-list
+    hr
+        border: 0.03rem solid dodgerblue
 
-.list-group-item + .pendent-list
-    border-left: 5px solid darkred
+.title-task-aprove-list
+    hr
+        border: 0.03rem solid green
 
-.list-group-item + .closed-list
-    border-left: 5px solid darkslategrey
+.title-task-pendent-list
+    hr
+        border: 0.03rem solid darkred
+
+.title-task-closed-list
+    hr
+        border: 0.03rem solid darkslategrey
+
+// Tasks
+
+.content-task-opened-list
+        border-left: 5px solid darkgrey !important
+
+.content-task-production-list
+        border-left: 5px solid dodgerblue !important
+
+.content-task-aprove-list
+        border-left: 5px solid green !important
+
+.content-task-pendent-list
+        border-left: 5px solid darkred !important
+
+.content-task-closed-list
+        border-left: 5px solid darkslategrey !important
 
 .list-task-group
     h5
@@ -74,8 +97,8 @@ body
         font-size: 0.6rem
         margin: 0
 
-.task-content-item
-    margin-left: -10px
+//.task-content-item
+//    margin-left: -10px
 
 //.closed-list
 //    background-color: rgba(15, 110, 6, 0.25)

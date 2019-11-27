@@ -16573,27 +16573,46 @@ body {
 .type-tasks-title hr {
   margin: 0 0 5px 0;
   padding: 0;
-  border: 0.03rem solid #C98D19;
 }
 
-.list-group-item + .opened-list {
-  border-left: 5px solid darkgrey;
+.title-task-opened-list hr {
+  border: 0.03rem solid darkgrey;
 }
 
-.list-group-item + .production-list {
-  border-left: 5px solid dodgerblue;
+.title-task-production-list hr {
+  border: 0.03rem solid dodgerblue;
 }
 
-.list-group-item + .aprove-list {
-  border-left: 5px solid green;
+.title-task-aprove-list hr {
+  border: 0.03rem solid green;
 }
 
-.list-group-item + .pendent-list {
-  border-left: 5px solid darkred;
+.title-task-pendent-list hr {
+  border: 0.03rem solid darkred;
 }
 
-.list-group-item + .closed-list {
-  border-left: 5px solid darkslategrey;
+.title-task-closed-list hr {
+  border: 0.03rem solid darkslategrey;
+}
+
+.content-task-opened-list {
+  border-left: 5px solid darkgrey !important;
+}
+
+.content-task-production-list {
+  border-left: 5px solid dodgerblue !important;
+}
+
+.content-task-aprove-list {
+  border-left: 5px solid green !important;
+}
+
+.content-task-pendent-list {
+  border-left: 5px solid darkred !important;
+}
+
+.content-task-closed-list {
+  border-left: 5px solid darkslategrey !important;
 }
 
 .list-task-group h5 {
@@ -16604,10 +16623,6 @@ body {
 .list-task-group p {
   font-size: 0.6rem;
   margin: 0;
-}
-
-.task-content-item {
-  margin-left: -10px;
 }
 
 /* Style for Tab Nav */
