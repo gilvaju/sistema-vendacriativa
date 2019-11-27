@@ -1,41 +1,31 @@
 <div class="container-fluid">
-    <div class="row mb-3 no-gutters">
+    <div class="row mb-3 no-gutters d-flex justify-content-center">
         <div class="col-1 d-inline">
-            <button type="submit" class="btn border-0 bg-white text-info">
-                <i class="fas fa-step-backward"></i>
-            </button>
-        </div>
-        <div class="col-1" style="margin-left: 20px">
-            <span><i style="margin-top: 12px;" class="fas fa-chevron-right"></i></span>
+            <i class="fas fa-step-backward text-info"></i>
         </div>
         <div class="col-1">
-            <button type="submit" class="btn border-0 bg-white text-secundary">
-                <i class="fab fa-product-hunt"></i>
-            </button>
-        </div>
-        <div class="col-1" style="margin-left: 20px">
-            <span><i style="margin-top: 12px;" class="fas fa-chevron-right"></i></span>
+            <span><i class="fas fa-chevron-right"></i></span>
         </div>
         <div class="col-1">
-            <button type="submits" class="btn border-0 bg-white text-primary">
-                <i class="fas fa-check"></i>
-            </button>
-        </div>
-        <div class="col-1" style="margin-left: 20px">
-            <span><i style="margin-top: 12px;" class="fas fa-chevron-right"></i></span>
+            <i class="fab fa-product-hunt text-secundary"></i>
         </div>
         <div class="col-1">
-            <button type="submit" class="btn border-0 bg-white text-success">
-                <i class="fas fa-check-double"></i>
-            </button>
-        </div>
-        <div class="col-1" style="margin-left: 20px">
-            <span><i style="margin-top: 12px;" class="fas fa-unlink"></i></span>
+            <span><i class="fas fa-chevron-right"></i></span>
         </div>
         <div class="col-1">
-            <button type="submit" class="btn border-0 bg-white text-danger">
-                <i class="fas fa-stop-circle"></i>
-            </button>
+            <i class="fas fa-check text-primary"></i>
+        </div>
+        <div class="col-1">
+            <span><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <div class="col-1">
+            <i class="fas fa-check-double text-success"></i>
+        </div>
+        <div class="col-1">
+            <span><i class="fas fa-unlink"></i></span>
+        </div>
+        <div class="col-1">
+            <i class="fas fa-stop-circle text-danger"></i>
         </div>
     </div>
 </div>
