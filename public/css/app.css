@@ -16528,20 +16528,9 @@ a.text-dark:focus {
   }
 }
 
-body {
-  background-color: #e6e7e8;
-}
-
-.bg-orangevc {
-  background-color: #C98D19;
-}
-
-.bg-bluevc {
-  background-color: #0A4081;
-}
-
-.container-signin {
-  background-color: #C98D19;
+.logo {
+  height: 30px;
+  margin-top: 10px;
 }
 
 .card-signin {
@@ -16558,11 +16547,6 @@ body {
 
 .notifications-general {
   margin-top: 1rem;
-}
-
-.logo {
-  height: 30px;
-  margin-top: 10px;
 }
 
 .type-tasks-title h5 {
