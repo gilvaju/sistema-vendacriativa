@@ -16,10 +16,10 @@
                                     @csrf
                                     <input type="email" name="email" placeholder="Digite aqui seu email" class="form-control mt-3" required autofocus>
                                     <input type="password" name="password" placeholder="Digite aqui sua senha" class="form-control mt-3" required>
-                                    
+
                                     <hr>
-                                    
-                                    <input type="submit" value="Entrar" class="btn bg-bluevc text-light btn-block">
+
+                                    <input type="submit" value="Entrar" class="btn bg-primary text-light btn-block">
                                     <a href="/register" class="btn btn-secondary text-light btn-block">Cadastro</a>
                                 </form>
                             </div>

@@ -58,7 +58,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="submit" class="btn btn-outline-secondary bg-orangevc text-white" type="button">
+                    <button type="submit" class="btn btn-outline-secondary bg-primary text-white" type="button">
                         <!-- <i class="fas fa-plus"></i> -->
                         Adicionar
                     </button>
