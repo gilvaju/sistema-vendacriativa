@@ -24,7 +24,7 @@
         </form>
     </div>
 </div>
-<div class="row">
+<div class="row mt-2">
     <div class="col-4">
         <form action="{{ route('task.aprove', $task->id) }}" method="POST">
             @csrf
