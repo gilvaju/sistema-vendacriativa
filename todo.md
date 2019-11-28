@@ -26,6 +26,7 @@
 
 ## UX/UI/System Features
 
+* Add inputs do MD
 * Pesquisa de tarefas
 * Melhorar inserção de tarefas com um bom briefing
 * Datepicker
@@ -35,4 +36,4 @@
 
 ## Bugs e Hotfixes
 
-* Título do grupo de tarefas por status
+* Corrigir cor dos butões

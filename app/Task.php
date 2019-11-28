@@ -10,7 +10,7 @@ class Task extends Model
 
     public $delivery = null;
 
-    public function __construct()
+    public function delivery()
     {
         $this->delivery = date( 'd/m/Y' , strtotime($this->delivery_date));
     }
