@@ -16560,6 +16560,8 @@ body {
 }
 
 .section-list-group h5 {
+  color: #6c757d;
+  font-size: 0.8rem;
   margin: 0 0 0.1rem 0;
   padding: 0;
 }
@@ -16573,6 +16575,38 @@ body {
   border: 0;
   background-color: #f7f7f7;
   margin-bottom: 0.4rem;
+}
+
+.section-list-group .list-group .list-group-item a {
+  text-decoration: none;
+}
+
+.section-list-group .list-group .list-group-item a h5 {
+  font-size: 1rem;
+  color: #0a1520;
+}
+
+.section-list-group .list-group .list-group-item p {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.section-list-group .list-group .list-group-item .badge {
+  padding: 0.5rem 0;
+}
+
+.section-list-group .list-group .list-group-item .client-badge {
+  color: darkblue;
+  text-transform: uppercase;
+}
+
+.section-list-group .list-group .list-group-item .delivery-badge {
+  color: lightseagreen;
+}
+
+.section-list-group .list-group .list-group-item .responsible-badge {
+  color: darkred;
+  text-transform: uppercase;
 }
 
 .pendent-list .list-group .list-group-item {
@@ -16625,6 +16659,7 @@ body {
   border-radius: 0;
   border: none;
   padding: 0.75rem;
+  color: lightsteelblue;
 }
 
 /* Style for bloat button */
