@@ -3,7 +3,7 @@
 {{--        <form action="{{ route('task.opened', $task->id) }}" method="POST">--}}
 {{--            @csrf--}}
 {{--            <button type="submit" class="btn text-info">--}}
-{{--                <i class="fas fa-2x fa-step-backward"></i>--}}
+{{--                <i class="fas fa-2x fa-plus"></i>--}}
 {{--            </button>--}}
 {{--        </form>--}}
 {{--    </div>--}}
