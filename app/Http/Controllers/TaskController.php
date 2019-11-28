@@ -84,7 +84,18 @@ class TaskController extends Controller
      */
     public function update(Request $request, Task $task)
     {
-        //
+        request()->validate([
+            'title' => ['required'],
+            'description' => ['required'],
+            'status' => ['required'],
+            'delivery_date' => ['required'],
+            'owner_id' => ['required'],
+            'responsible_id' => ['required'],
+            'client_id' => ['required']
+        ]);
+
+        $task->fill($request->all())->save();
+        return redirect('/home');
     }
 
     /**

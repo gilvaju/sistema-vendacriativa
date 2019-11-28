@@ -41,13 +41,4 @@
             </button>
         </form>
     </div>
-{{--    <div class="col-4">--}}
-{{--        <form action="{{ route('task.destroy', $task->id) }}" method="POST">--}}
-{{--            @csrf--}}
-{{--            @method('DELETE')--}}
-{{--            <button type="submit" class="btn text-info">--}}
-{{--                <i class="far fa-2x fa-trash-alt"></i>--}}
-{{--            </button>--}}
-{{--        </form>--}}
-{{--    </div>--}}
 </div>

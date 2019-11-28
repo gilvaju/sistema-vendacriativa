@@ -23,12 +23,12 @@
                     <div class="row">
                         <div class="col-12">
                             <input type="text" class="form-control mb-1" name="title" id="" placeholder="Inserir tarefa" value="{{ old('title') }}">
-                            <textarea class="form-control mb-1" name="description" id="" rows="3"></textarea>
+                            <textarea class="form-control mb-1" name="description" id="" rows="3">{{ old('title') }}</textarea>
                         </div>
                     </div>
                     <div class="row mt-1">
                         <div class="col-6">
-                            <input class="form-control" type="date" name="delivery_date" value="2011-08-19" id="example-date-input">
+                            <input class="form-control" type="date" name="delivery_date" value="" id="example-date-input">
                         </div>
                         <div class="col-6">
                             <select name="status" class="custom-select">
