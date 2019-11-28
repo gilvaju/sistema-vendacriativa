@@ -8,7 +8,7 @@
             <p>{{ $task->description }}</p>
             <span class="badge responsible-badge">{{ $task->responsible->name }}</span>
             <span class="badge text-secondary"><i class="fas fa-chevron-right"></i></span>
-            <span class="badge delivery-badge">{{ $task->delivery }}</span>
+            <span class="badge delivery-badge">{{ $task->delivery() }}</span>
         </div>
         <div class="col-4 pl-0 pr-0">
             @include('panels.tasks.partials.task_actions')
