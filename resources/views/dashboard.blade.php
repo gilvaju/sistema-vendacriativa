@@ -6,7 +6,14 @@
         @include('partials.header')
     </div>
     <div class="row">
-        @include('partials.panels-content')
+        <div class="container-fluid">
+            <div class="row">
+                @include('partials.errors')
+                <div class="col-12 col-xl-4">
+                    @include('panels.tasks.partials.tasks')
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Flot button actions -->
@@ -26,6 +33,6 @@
         </li>
     </ul>
 
-    @include('partials.create-task')
+    @include('panels.tasks.partials.create-task')
 </div>
 @endsection
