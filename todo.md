@@ -9,6 +9,9 @@
     > https://www.codeply.com/go/dI6CknFxts/bootstrap-4-timeline
     > https://freefrontend.com/css-timelines/
 * Gestão financeira
+* Notificaçês para o CRUD de tarefas
+* Filtros
+* Ordenação por data
 
 ## UX/UI/System Features
 
