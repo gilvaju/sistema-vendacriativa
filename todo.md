@@ -12,6 +12,17 @@
 * Notificaçês para o CRUD de tarefas
 * Filtros
 * Ordenação por data
+* Indicar qtd de tarefas no título do grupo de tarefas por status
+
+## Briefing
+
+* cliente,
+* objetivo,
+* briefing,
+* formato (tamanho do arquivo),
+* observações,
+* referência (se houver),
+* prazo,
 
 ## UX/UI/System Features
 
@@ -24,4 +35,4 @@
 
 ## Bugs e Hotfixes
 
-* Nothing
+* Título do grupo de tarefas por status
