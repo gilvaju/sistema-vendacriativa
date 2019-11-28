@@ -39,15 +39,13 @@
                         </div>
                     </div>
                     <div class="row mt-1">
-                        <div class="col-12">
+                        <div class="col-6">
                             <select name="client_id" class="custom-select">
                                 @foreach(config('sgvc.clients') as $id => $client)
                                     <option value="{{ $id }}" >{{ $client }}</option>
                                 @endforeach
                             </select>
                         </div>
-                    </div>
-                    <div class="row mt-1">
                         <div class="col-6">
                             <select name="responsible_id" class="custom-select">
                                 @foreach($users as $user)
@@ -55,13 +53,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        <div class="col-6">
-                            <select name="owner_id" class="custom-select">
-                                @foreach($users as $user)
-                                    <option value="{{ $user->id }}" >{{ $user->name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
+                        <input type="hidden" name="owner_id" value="{{ $user->id }}">
                     </div>
                 </div>
                 <div class="modal-footer">
