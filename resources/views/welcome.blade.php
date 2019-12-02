@@ -18,7 +18,7 @@
                             <div class="col-12">
                                 <hr>
                                 <p class=" text-justify">Você gostaria de fazer o que?</p>
-                                <a href="https://vendacriativa.com" class="btn btn-info btn-block">Visitar o Site</a>
+                                <a href="https://vendacriativa.com" class="btn btn-success btn-block">Visitar o Site</a>
                                 <a href="/login" class="btn bg-bluevc text-light btn-block">Entrar</a>
                             </div>
                         </div>
