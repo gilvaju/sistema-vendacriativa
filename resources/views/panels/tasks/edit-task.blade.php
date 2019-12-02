@@ -49,13 +49,13 @@
     </div>
     <div class="row mt-3">
         <div class="col-6 d-flex justify-content-start">
-            <form action="{{ route('task.destroy', $task->id) }}" method="POST">
-                @csrf
-                @method('DELETE')
-                <button type="submit" class="btn text-danger d-flex align-items-center">
-                    <i class="far fa-2x fa-trash-alt"></i>
-                </button>
-            </form>
+{{--            <form action="{{ route('task.destroy', $task->id) }}" method="POST">--}}
+{{--                @csrf--}}
+{{--                @method('DELETE')--}}
+{{--                <button type="submit" class="btn text-danger d-flex align-items-center">--}}
+{{--                    <i class="far fa-2x fa-trash-alt"></i>--}}
+{{--                </button>--}}
+{{--            </form>--}}
         </div>
         <div class="col-6 d-flex justify-content-end">
             <a class="btn btn-outline-secondary mr-2 d-flex align-items-center btn-lg" href="{{ route('home') }}" role="button">Voltar</a>

@@ -31,11 +31,11 @@ class HomeController extends Controller
         $idStatusClosed = array_search('Concluída', config('sgvc.status'));
 
         return view('dashboard')
-            ->with('openedTasks', $task->where('status', $idStatusOpened)->get())
-            ->with('pendentTasks', $task->where('status', $idStatusPendent)->get())
-            ->with('aproveTasks', $task->where('status', $idStatusAprove)->get())
-            ->with('productionTasks', $task->where('status', $idStatusProduction)->get())
-            ->with('closedTasks', $task->where('status', $idStatusClosed)->get())
+            ->with('openedTasks', $task->where('status', $idStatusOpened)->orderBy('delivery_date', 'DESC')->get())
+            ->with('pendentTasks', $task->where('status', $idStatusPendent)->orderBy('delivery_date', 'DESC')->get())
+            ->with('aproveTasks', $task->where('status', $idStatusAprove)->orderBy('delivery_date', 'DESC')->get())
+            ->with('productionTasks', $task->where('status', $idStatusProduction)->orderBy('delivery_date', 'DESC')->get())
+            ->with('closedTasks', $task->where('status', $idStatusClosed)->orderBy('delivery_date', 'DESC')->get())
             ->with('users', $user->all());
     }
 }
