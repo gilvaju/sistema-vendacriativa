@@ -8,7 +8,7 @@ return [
         '3' => 'Aprovar',
         '4' => 'Concluída',
         '5' => 'Produção',
-        '6' => 'Brifado',
+        '6' => 'Brifadas',
     ],
 
     'clients' => [
