@@ -14,9 +14,7 @@
             </div>
             <div class="row">
                 @include('partials.errors')
-                <div class="col-12 col-xl-4">
-                    @include('panels.tasks.partials.tasks')
-                </div>
+                @include('panels.tasks.partials.tasks')
             </div>
         </div>
     </div>
