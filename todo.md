@@ -12,6 +12,7 @@
 * Notificaçês para o CRUD de tarefas
 * Filtros
 * Ordenação por data
+* Orçamento
 * Indicar qtd de tarefas no título do grupo de tarefas por status
 
 ## Briefing
