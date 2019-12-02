@@ -4,7 +4,7 @@
             <img src="/img/logo.png" class="logo" alt="">
         </div>
 
-        <div class="col-10">
+        <div class="col-10 d-flex justify-content-end">
             @include('partials.nav-panels')
         </div>
     </div>

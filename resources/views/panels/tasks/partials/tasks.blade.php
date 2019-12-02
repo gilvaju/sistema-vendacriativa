@@ -1,4 +1,4 @@
-@include('panels.tasks.partials.process')
+{{--@include('panels.tasks.partials.process')--}}
 @include('panels.tasks.sections.pendent_list')
 @include('panels.tasks.sections.aprove_list')
 @include('panels.tasks.sections.production_list')
