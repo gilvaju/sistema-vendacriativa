@@ -28,7 +28,7 @@
     <div class="col-4">
         <form action="{{ route('task.aprove', $task->id) }}" method="POST">
             @csrf
-            <button type="submits" class="btn text-aprove">
+            <button type="submit" class="btn text-aprove">
                 <i class="fas fa-2x fa-check"></i>
             </button>
         </form>

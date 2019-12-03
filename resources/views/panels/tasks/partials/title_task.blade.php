@@ -5,7 +5,10 @@
                     <h5><i class="fas fa-plus text-opened"></i> {{ $statusGroupTasks}} | {{ $countTasks }}</h5>
                     @break
                 @case('Brifadas')
-                    <h5><i class="fas fa-list"></i> {{ $statusGroupTasks}} | {{ $countTasks }}</h5>
+                    <h5><i class="fas fa-list text-briefed"></i> {{ $statusGroupTasks}} | {{ $countTasks }}</h5>
+                    @break
+                @case('Pausadas')
+                    <h5><i class="fas fa-pause-circle text-paused"></i> {{ $statusGroupTasks}} | {{ $countTasks }}</h5>
                     @break
                 @case('Produzindo')
                     <h5><i class="fas fa-edit text-production"></i> {{ $statusGroupTasks}} | {{ $countTasks }}</h5>
