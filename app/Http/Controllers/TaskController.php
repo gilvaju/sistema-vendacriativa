@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Task;
 use App\User;
+use Illuminate\Database\Console\Migrations\StatusCommand;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -182,8 +183,7 @@ class TaskController extends Controller
 
     public function change(Request $request, Task $task)
     {
-        $task->status = array_search('Pendente', config('sgvc.status'));
-        $task->save();
+        $task->fill($request->all())->save();
         return redirect('/home');
     }
 }
