@@ -7,11 +7,13 @@
     </div>
     <div class="row">
         <div class="container-fluid">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-xl-4">
-                    @include('panels.tasks.partials.process')
+            @if ($agent->isMobile())
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-xl-4">
+                        @include('panels.tasks.partials.process')
+                    </div>
                 </div>
-            </div>
+            @endif
             <div class="row">
                 @include('partials.errors')
                 @include('panels.tasks.partials.tasks')
