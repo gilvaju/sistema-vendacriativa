@@ -28,6 +28,7 @@ Route::post('/task/completed/{task}', 'TaskController@completed')->name('task.co
 Route::post('/task/aprove/{task}', 'TaskController@aprove')->name('task.aprove');
 Route::post('/task/production/{task}', 'TaskController@production')->name('task.production');
 Route::post('/task/pendent/{task}', 'TaskController@pendent')->name('task.pendent');
+Route::post('/task/change/{task}', 'TaskController@change')->name('task.change');
 
 // Route::resource('client', 'ClientController');
 Route::resource('task', 'TaskController');

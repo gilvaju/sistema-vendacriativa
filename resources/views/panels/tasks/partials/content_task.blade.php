@@ -13,13 +13,13 @@
     </div>
     <div class="row">
         <div class="col-12 pl-0 mb-0 d-flex justify-content-between">
-            <form action="{{ route('task.aprove', $task->id) }}" method="POST">
+            <form action="{{ route('task.change', $task->id) }}" method="POST">
                 @csrf
                 <button type="submit" class="btn btn-sm text-aprove">
                     <i class="fas fa-arrow-left"></i>
                 </button>
             </form>
-            <form action="{{ route('task.aprove', $task->id) }}" method="POST">
+            <form action="{{ route('task.change', $task->id) }}" method="POST">
                 @csrf
                 <button type="submit" class="btn btn-sm text-aprove">
                     <i class="fas fa-arrow-right"></i>

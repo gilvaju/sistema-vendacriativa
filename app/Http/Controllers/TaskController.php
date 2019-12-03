@@ -179,4 +179,11 @@ class TaskController extends Controller
         $task->save();
         return redirect('/home');
     }
+
+    public function change(Request $request, Task $task)
+    {
+        $task->status = array_search('Pendente', config('sgvc.status'));
+        $task->save();
+        return redirect('/home');
+    }
 }
