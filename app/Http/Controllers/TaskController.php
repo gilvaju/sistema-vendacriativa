@@ -4,15 +4,21 @@ namespace App\Http\Controllers;
 
 use App\Task;
 use App\User;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Database\Console\Migrations\StatusCommand;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
+use Illuminate\View\View;
 
 class TaskController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @param Task $tasks
+     * @return void
      */
     public function index(Task $tasks)
     {
@@ -22,7 +28,7 @@ class TaskController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return void
      */
     public function create()
     {
@@ -32,8 +38,9 @@ class TaskController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Task $task
+     * @return RedirectResponse|Redirector
      */
     public function store(Request $request, Task $task)
     {
@@ -54,8 +61,8 @@ class TaskController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
+     * @param Task $task
+     * @return void
      */
     public function show(Task $task)
     {
@@ -65,9 +72,9 @@ class TaskController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Task $task
+     * @param Task $task
      * @param User $user
-     * @return \Illuminate\Http\Response
+     * @return Factory|View
      */
     public function edit(Task $task, User $user)
     {
@@ -79,9 +86,9 @@ class TaskController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Task $task
+     * @return RedirectResponse|Redirector
      */
     public function update(Request $request, Task $task)
     {
@@ -102,8 +109,9 @@ class TaskController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
+     * @param Task $task
+     * @return RedirectResponse|Redirector
+     * @throws \Exception
      */
     public function destroy(Task $task)
     {
@@ -114,9 +122,9 @@ class TaskController extends Controller
     /**
      * Opened task.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Task $task
+     * @return RedirectResponse|Redirector
      */
     public function opened(Request $request, Task $task)
     {
@@ -128,9 +136,9 @@ class TaskController extends Controller
     /**
      * Aprove task.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Task $task
+     * @return RedirectResponse|Redirector
      */
     public function completed(Request $request, Task $task)
     {
@@ -142,9 +150,9 @@ class TaskController extends Controller
     /**
      * Aprove task.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Task $task
+     * @return RedirectResponse|Redirector
      */
     public function aprove(Request $request, Task $task)
     {
@@ -156,9 +164,9 @@ class TaskController extends Controller
     /**
      * Production task.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Task $task
+     * @return RedirectResponse|Redirector
      */
     public function production(Request $request, Task $task)
     {
@@ -170,9 +178,9 @@ class TaskController extends Controller
     /**
      * Pendent task.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Task $task
+     * @return RedirectResponse|Redirector
      */
     public function pendent(Request $request, Task $task)
     {
