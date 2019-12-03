@@ -16622,8 +16622,12 @@ body {
   border-left: 5px solid lightblue;
 }
 
-.briefing-list .list-group .list-group-item {
-  border-left: 5px solid lightgrey;
+.brified-list .list-group .list-group-item {
+  border-left: 5px solid dodgerblue;
+}
+
+.paused-list .list-group .list-group-item {
+  border-left: 5px solid darkorange;
 }
 
 .opened-list .list-group .list-group-item {
@@ -16636,6 +16640,14 @@ body {
 
 .text-pendent {
   color: lightsalmon;
+}
+
+.text-briefed {
+  color: dodgerblue;
+}
+
+.text-paused {
+  color: darkorange;
 }
 
 .text-aprove {

@@ -1,21 +1,24 @@
 @if ($agent->isMobile())
-    <div class="col-12 col-xl-2">
+    <div class="col-12">
         @include('panels.tasks.sections.mobile.pendent_list')
     </div>
-    <div class="col-12 col-xl-2">
+    <div class="col-12">
         @include('panels.tasks.sections.mobile.aprove_list')
     </div>
-    <div class="col-12 col-xl-2">
+    <div class="col-12">
         @include('panels.tasks.sections.mobile.production_list')
     </div>
-    <div class="col-12 col-xl-2">
+    <div class="col-12">
+        @include('panels.tasks.sections.mobile.paused_list')
+    </div>
+    <div class="col-12">
         @include('panels.tasks.sections.mobile.brified_list')
     </div>
-    <div class="col-12 col-xl-2">
+    <div class="col-12">
         @include('panels.tasks.sections.mobile.opened_list')
     </div>
     {{--<div class="col-12 d-none d-sm-block d-md-none">--}}
-    <div class="col-12 col-xl-2">
+    <div class="col-12">
         @include('panels.tasks.sections.mobile.closed_list')
     </div>
     @else
