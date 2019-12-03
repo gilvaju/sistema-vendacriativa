@@ -2,13 +2,23 @@
 
 return [
 
-    'status' => [
+    'status_legacy' => [
         '1' => 'Aberta',
         '2' => 'Pendente',
         '3' => 'Aprovar',
         '4' => 'Concluída',
         '5' => 'Produção',
         '6' => 'Brifadas',
+    ],
+
+    'status' => [
+        '1' => 'Aberta',
+        '2' => 'Brifadas',
+        '3' => 'Pausadas',
+        '4' => 'Produção',
+        '5' => 'Pendente',
+        '6' => 'Aprovar',
+        '7' => 'Concluída',
     ],
 
     'clients' => [
