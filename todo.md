@@ -9,12 +9,10 @@
     > https://www.codeply.com/go/dI6CknFxts/bootstrap-4-timeline
     > https://freefrontend.com/css-timelines/
 * Gestão financeira
-* Notificaçês para o CRUD de tarefas
 * Filtros
-* Ordenação por data
+* Ordenação por data mas antigas
 * Status de Orçamento
-* Status de Pausa
-* Indicar qtd de tarefas no título do grupo de tarefas por status
+* Camapanhas para as demandas
 
 ## Briefing
 
@@ -29,6 +27,8 @@
 ## UX/UI/System Features
 
 * Add inputs do MD
+* Trim para descrição da demanda
+* Notificaçês para o CRUD de tarefas
 * Pesquisa de tarefas
 * Melhorar inserção de tarefas com um bom briefing
 * Datepicker
@@ -38,4 +38,4 @@
 
 ## Bugs e Hotfixes
 
-* Corrigir cor dos butões
+* Sem nenhum

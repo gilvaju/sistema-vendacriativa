@@ -14,8 +14,13 @@
                     </div>
                 </div>
             @endif
+            @include('partials.errors')
+            <div class="row mt-3">
+                <div class="col-5">
+                    @include('panels.tasks.partials.filters')
+                </div>
+            </div>
             <div class="row">
-                @include('partials.errors')
                 @include('panels.tasks.partials.tasks')
             </div>
         </div>
