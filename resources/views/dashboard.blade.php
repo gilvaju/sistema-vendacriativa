@@ -15,7 +15,7 @@
                 </div>
             @endif
             @include('partials.errors')
-            <div class="row mt-3">
+            <div class="row mt-3 d-flex flex-row-reverse">
                 <div class="col-5">
                     @include('panels.tasks.partials.filters')
                 </div>

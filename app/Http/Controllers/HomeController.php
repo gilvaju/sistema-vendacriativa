@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Task;
 use App\User;
+use Illuminate\Contracts\Support\Renderable;
+use Illuminate\Http\Request;
+use Symfony\Component\Console\Input\Input;
 
 class HomeController extends Controller
 {
@@ -20,10 +23,31 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @param Task $task
+     * @param User $user
+     * @param Request $request
+     * @return Renderable
      */
-    public function index(Task $task, User $user)
+    public function index(Task $task, User $user, Request $request)
     {
-        return view('dashboard')->with('tasks', Task::all())->with('users', $user->all());
+        $tasks = Task::all();
+
+        if (!empty($request->all())) {
+
+            if (!empty($request->client_id)) {
+                $tasks = $tasks->where('client_id', $request->client_id);
+            }
+
+//            if (!empty($request->status)) {
+//                $tasks = $tasks->where('status', $request->status);
+//            }
+
+            if (!empty($request->responsible_id)) {
+                $tasks = $tasks->where('responsible_id', $request->responsible_id);
+            }
+//            dd($tasks);
+
+        }
+        return view('dashboard')->with('tasks', $tasks)->with('users', $user->all());
     }
 }
