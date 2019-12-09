@@ -1,7 +1,7 @@
 <form action="{{ route('home') }}" method="GET">
     <div class="input-group">
         <select class="mr-2 form-control form-control-sm" name="client_id" aria-label="Example select with button addon">
-            <option value="">Todos</option>
+            <option value="">Cliente</option>
         @foreach(config('sgvc.clients') as $id => $status)
                 <option value="{{ $id }}">{{ $status }}</option>
             @endforeach
@@ -12,7 +12,7 @@
 {{--            @endforeach--}}
 {{--        </select>--}}
         <select class="mr-2 form-control form-control-sm" name="responsible_id" aria-label="Example select with button addon">
-            <option value="">Todos</option>
+            <option value="">Responsavel</option>
             @foreach($users as $user)
                 <option value="{{ $user->id }}">{{ $user->name }}</option>
             @endforeach
